@@ -141,6 +141,7 @@ nav{
   align-items:center;
   justify-content:center;
   isolation:isolate;
+  flex-wrap:wrap;
 }
 .hero-visual::before{
   content:"";
@@ -419,7 +420,7 @@ footer p{max-width:760px;margin:0 auto}
   .grid-3,.field-grid{grid-template-columns:1fr}
   .choice-group{grid-template-columns:repeat(2,1fr)}
   .assistant-figure img{max-width:280px}
-  .balloon{position:static;margin:14px 0}
+  .balloon{position:static;margin:14px 0;width:100%;max-width:100%;box-sizing:border-box}
   .balloon::after{display:none}
   .hero-grid{gap:18px}
 }
@@ -433,6 +434,9 @@ footer p{max-width:760px;margin:0 auto}
   .btns{display:grid}
   .card,.form-card,.summary{padding:22px}
   .nav-inner{height:72px}
+  .hero-visual{flex-direction:column;align-items:stretch;min-height:auto;gap:12px}
+  .balloon{position:static;width:100%;max-width:100%;margin:0}
+  .setinho{width:min(100%,340px);margin:0 auto}
 }
 
 .wizard-shell{align-items:start}
